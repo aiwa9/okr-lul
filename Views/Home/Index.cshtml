@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Cahaya.Models.Comments>
+@{
+	ViewData["Title"] = "Hello React";
+	//Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+	<ul>
+		@foreach (var item in Model)
+		{
+			<li>@item.Author</li>
+			<li>@item.Text</li>
+		}
+	</ul>
+
+	<div id="content"></div>
+	
